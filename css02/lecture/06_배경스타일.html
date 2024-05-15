@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경스타일</title>
+    <style>
+        body {
+            background: pink;
+        }
+
+        #div-bg {
+            background: white;
+        }
+        .div-test {
+            background: white;
+            padding : 20px;
+            border : 5px dashed black;
+            width: 20%;
+            float: left;
+        }
+
+        #div1 {
+            background-clip : border-box;
+        }
+        #div2 {
+            background-clip : padding-box;
+        }
+        #div3 {
+            background-clip: content-box;
+        }
+
+        .clearfloat {
+            clear : left;
+        }
+
+        #bg-img {
+            width : 70%;
+            height: 1600px;
+            border : 4px solid skyblue;
+            background-image: url(../resources/images/flower1.PNG);
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            background-size: contain;
+            background-size: auto;
+
+            background-attachment: fixed;
+            background-attachment: scroll;
+
+            background-position: 50% 50%;
+            background-position: 30px 50px;
+            background-position: bottom;
+        }
+    </style>
+</head>
+<body>
+    <h1>배경색과 배경 이미지</h1>
+
+    <h3>div 배경 테스트</h3>
+    <div id="div-bg">
+        했던 시인의 청춘이 이국 있습니다. 어머니 나의 잠, 우는 너무나 별 가득 듯합니다. 가을 했던 하나에 이름자 하나에 아이들의 있습니다. 때 강아지, 별 듯합니다. 나는 별빛이 이런 가을로 한 잔디가 버리었습니다. 된 나는 하나에 피어나듯이 경, 쉬이 듯합니다. 당신은 프랑시스 멀리 풀이 있습니다. 시인의 아침이 이제 강아지, 지나가는 나는 걱정도 우는 그리워 계십니다. 별에도 그러나 것은 별빛이 오는 별이 언덕 불러 때 까닭입니다. 위에 헤는 어머님, 강아지, 별 노새, 봅니다. 하나에 같이 된 있습니다.
+    </div>
+
+    <h3>배경 적용 범위 조정</h3>
+    <div class="div-test" id="div1">
+    내 아름다운 우는 추억과 마리아 나의 어머님, 시인의 듯합니다. 슬퍼하는 아직 덮어 계십니다. 이름자를 별 노새, 밤이 잠, 까닭입니다. 책상을 별빛이 풀이 라이너 같이 이름을 소녀들의 하나에 듯합니다. 파란 비둘기, 경, 아이들의 하나에 까닭입니다. 파란 않은 마디씩 이제 이름자를 묻힌 봅니다. 피어나듯이 파란 내 별을 까닭입니다. 새겨지는 남은 비둘기, 않은 별이 까닭입니다. 쉬이 풀이 잠, 파란 나는 하나에 것은 봅니다.</div>
+    <div class="div-test" id="div2">
+    내 아름다운 우는 추억과 마리아 나의 어머님, 시인의 듯합니다. 슬퍼하는 아직 덮어 계십니다. 이름자를 별 노새, 밤이 잠, 까닭입니다. 책상을 별빛이 풀이 라이너 같이 이름을 소녀들의 하나에 듯합니다. 파란 비둘기, 경, 아이들의 하나에 까닭입니다. 파란 않은 마디씩 이제 이름자를 묻힌 봅니다. 피어나듯이 파란 내 별을 까닭입니다. 새겨지는 남은 비둘기, 않은 별이 까닭입니다. 쉬이 풀이 잠, 파란 나는 하나에 것은 봅니다.</div>
+    <div class="div-test" id="div3">
+    내 아름다운 우는 추억과 마리아 나의 어머님, 시인의 듯합니다. 슬퍼하는 아직 덮어 계십니다. 이름자를 별 노새, 밤이 잠, 까닭입니다. 책상을 별빛이 풀이 라이너 같이 이름을 소녀들의 하나에 듯합니다. 파란 비둘기, 경, 아이들의 하나에 까닭입니다. 파란 않은 마디씩 이제 이름자를 묻힌 봅니다. 피어나듯이 파란 내 별을 까닭입니다. 새겨지는 남은 비둘기, 않은 별이 까닭입니다. 쉬이 풀이 잠, 파란 나는 하나에 것은 봅니다.</div>
+
+    <hr class="clearfloat">
+
+    <h3>배경 이미지 테스트</h3>
+    <div id="bg-img"></div>
+</body>
+</html>
